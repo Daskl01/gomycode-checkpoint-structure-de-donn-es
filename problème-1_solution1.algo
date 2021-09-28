@@ -7,7 +7,7 @@ BEGIN
     //M:=s1.lenght
     //N:=s2.lenght
     FOR i FROM 0 TO M-1 STEP 1  DO
-        FOR i FROM 0 TO N-1 STEP 1  DO
+        FOR j FROM 0 TO N-1 STEP 1  DO
             IF (s1[i]<>s2[j]) THEN
             sum:=sum+s1[i]+s2[j]
             END_IF

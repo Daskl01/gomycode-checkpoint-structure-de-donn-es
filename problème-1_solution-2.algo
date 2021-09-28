@@ -1,12 +1,17 @@
 ALGORITHM problème_1
 VAR
-    HASH_TABLE<integer,integer>
+    htab1:HASH_TABLE<integer,integer>
+    htab2:HASH_TABLE<integer,integer>
+    tab1:ARRAY_OF_INTEGER
+    tab2:ARRAY_OF_INTEGER
+    sum:INTEGER:=0
 BEGIN
     FOR i FROM 0 TO M-1 STEP 1  DO
         FOR i FROM 0 TO N-1 STEP 1  DO
-            IF (get[i]<>get[j]) THEN
-            sum:=sum+get[i]<>get[j]
-            END_IF
+           IF (tab1.[i]=tab.[j]) THEN
+               sum:=sum+tab1[i]<>tab2[j]
+           END_IF
+           
         END_FOR
     END_FOR
         write("la somme est :"sum)   

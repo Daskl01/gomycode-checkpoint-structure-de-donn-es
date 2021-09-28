@@ -1,12 +1,14 @@
 ALGORITHM problème_2
 VAR
     m:ARRAY_OF_INTEGER[i][j]
+    sum:INTEGER:=0
 BEGIN
     FOR i FROM 0 TO M-1 STEP 1  DO
         FOR j FROM 0 TO N-1 STEP 1  DO
-            IF (m[i][1]>m[i+1][0]) THEN
+            IF (m[i][1]=m[i+1][0]) THEN
                 sum:=sum+m[i]+m[j]
             END_IF
         END_FOR
     END_FOR
+    write(sum)
 END
