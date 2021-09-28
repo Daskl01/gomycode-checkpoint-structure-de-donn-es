@@ -9,7 +9,7 @@ BEGIN
     FOR i FROM 0 TO M-1 STEP 1  DO
         FOR i FROM 0 TO N-1 STEP 1  DO
            IF (htable.get[i]=htable.get[j]) THEN
-               sum:=sum+tab1[i]<>tab2[j]
+               sum:=sum+tab1[i]+tab2[j]
            END_IF
            
         END_FOR

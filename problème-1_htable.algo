@@ -8,8 +8,8 @@ VAR
 BEGIN
     FOR i FROM 0 TO M-1 STEP 1  DO
         FOR i FROM 0 TO N-1 STEP 1  DO
-           IF (tab1.[i]=tab.[j]) THEN
-               sum:=sum+tab1[i]<>tab2[j]
+           IF (tab1.get[i]<>tab2.get[j]) THEN
+               sum:=sum+tab1[i]+tab2[j]
            END_IF
            
         END_FOR
