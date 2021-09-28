@@ -1,7 +1,7 @@
 ALGORITHM problème_1
 VAR
-    tab1:ARRAY_OF_INTEGER
-    tab2:ARRAY_OF_INTEGER
+    tab1:ARRAY_OF_INTEGER[]
+    tab2:ARRAY_OF_INTEGER[]
     sum:INTEGER:=0
 BEGIN
     //M:=s1.lenght

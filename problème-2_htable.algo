@@ -8,8 +8,8 @@ VAR
 BEGIN
     FOR i FROM 0 TO M-1 STEP 1  DO
         FOR i FROM 0 TO N-1 STEP 1  DO
-           IF (htable.get[i]=htable.get[j]) THEN
-               sum:=sum+tab1[i]+tab2[j]
+           IF (htab1.get(tab1[i]=htab2.get(tab1[j]) THEN
+               sum:=sum+tab1.get[i]+tab2.get[j]
            END_IF
            
         END_FOR
