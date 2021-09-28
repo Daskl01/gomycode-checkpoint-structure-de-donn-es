@@ -1,0 +1,13 @@
+ALGORITHM problème_2
+VAR
+    HASH_TABLE<integer,integer>
+BEGIN
+    FOR i FROM 0 TO M-1 STEP 1  DO
+        FOR i FROM 0 TO N-1 STEP 1  DO
+            IF (HASH_TABLE[i]<>HASH_TABLE[j]) THEN
+            sum:=sum+HASH_TABLE[i]<>HASH_TABLE[j]
+            END_IF
+        END_FOR
+    END_FOR
+        write("la somme est :"sum)   
+END

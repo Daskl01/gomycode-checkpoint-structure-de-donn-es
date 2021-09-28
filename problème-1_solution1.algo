@@ -1,0 +1,18 @@
+ALGORITHM problème_1
+VAR
+    tab1:ARRAY_OF_INTEGER
+    tab2:ARRAY_OF_INTEGER
+    sum:INTEGER:=0
+BEGIN
+    //M:=s1.lenght
+    //N:=s2.lenght
+    FOR i FROM 0 TO M-1 STEP 1  DO
+        FOR i FROM 0 TO N-1 STEP 1  DO
+            IF (s1[i]<>s2[j]) THEN
+            sum:=sum+s1[i]+s2[j]
+            END_IF
+        END_FOR
+    END_FOR
+        write("la somme est :"sum)   
+END
+
